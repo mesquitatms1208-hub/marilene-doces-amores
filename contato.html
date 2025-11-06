@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco | Marilene doces e amores</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        .contato-main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contato-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--cor-rosa-claro);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contato-container h2 {
+            color: var(--cor-dourada);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contato-container p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        /* Bloco de Botões */
+        .botoes-contato {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+            flex-wrap: wrap; 
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Estilo do Botão de WhatsApp */
+        .btn-whatsapp {
+            background-color: #25D366; 
+            color: #FFFFFF;
+            border: 2px solid #128C7E;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Estilo do Botão do Instagram */
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+            color: #FFFFFF;
+            border: 2px solid #77123A;
+        }
+
+        .btn-instagram:hover {
+            opacity: 0.9;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .btn-icone {
+            margin-right: 10px;
+            font-size: 1.4em;
+        }
+        
+        /* Bloco de Informações Extras */
+        .info-extras {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            text-align: left;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--cor-dourada);
+            flex-wrap: wrap;
+        }
+
+        .info-col {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .info-col h3 {
+            color: var(--cor-rosa-titulos);
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            border-bottom: 1px solid var(--cor-rosa-claro);
+            padding-bottom: 5px;
+        }
+
+        .info-col p {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+
+        .info-col strong {
+            color: var(--cor-dourada);
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .botoes-contato {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .info-extras {
+                flex-direction: column;
+                text-align: center;
+            }
+            .info-col {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fale Comigo</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html" class="link-menu">Início</a></li> 
+                <li><a href="destaques.html" class="link-menu">Nossos Destaques</a></li>
+                <li><a href="cardapio.html" class="link-menu">Cardápio</a></li>
+                <li><a href="contato.html" class="link-menu ativo">Fale Comigo</a></li>
+            </ul>
+        </nav>
+
+        <p>Pronta para atender seu pedido com carinho e agilidade!</p>
+    </header>
+
+    <main class="contato-main">
+        
+        <section class="contato-container">
+            <h2>Próximo Nível de Doçura: A Sua Encomenda!</h2>
+            <p>
+                Clique no botão de contato preferido para falar diretamente com a Marilene e iniciar seu orçamento.
+            </p>
+            
+            <div class="botoes-contato">
+                <a href="https://wa.me/5586994211516" target="_blank" class="btn btn-whatsapp">
+                    <span class="btn-icone">📞</span> Chamar no WhatsApp
+                </a>
+                
+                <a href="https://instagram.com/marilene_doces_amores" target="_blank" class="btn btn-instagram">
+                    <span class="btn-icone">📸</span> Ver no Instagram
+                </a>
+            </div>
+            
+            <div class="info-extras">
+                
+                <div class="info-col">
+                    <h3>Horário de Atendimento</h3>
+                    <p>
+                        <strong>Segunda à Sábado:</strong> 09:00h às 18:00h<br>
+                        (Respostas podem demorar fora do horário comercial).
+                    </p>
+                </div>
+                
+                <div class="info-col">
+                    <h3>Detalhes da Encomenda</h3>
+                    <p>
+                        Para a confirmação do pedido, solicitamos <strong>50% do valor antecipado</strong>.
+                        <br>
+                        Aceitamos <strong>Pix, Transferências e Cartão</strong>.
+                    </p>
+                </div>
+
+                <div class="info-col">
+                    <h3>Entregas</h3>
+                    <p>
+                        Consulte a taxa de entrega para sua região. <br>
+                        Retiradas no local (informar endereço após confirmação).
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Marilene doces e amores</p>
+        <p>Telefone para contato: (86) 99421-1516</p>
+    </footer>
+
+</body>
+</html>
